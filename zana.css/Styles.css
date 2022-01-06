@@ -662,7 +662,7 @@ p {
   transition: scale 3s ease-in;
 }
 @media screen and (max-width: 860px) {
-  .shop__cards:hover {
+  .shop__cards {
     transform: translate(30%, 0%);
   }
 }
@@ -673,12 +673,12 @@ p {
   }
 }
 @media screen and (max-width: 570px) {
-  .shop__cards:hover {
+  .shop__cards {
     transform: translate(35%, 0%);
   }
 }
 @media screen and (max-width: 410px) {
-  .shop__cards:hover {
+  .shop__cards {
     transform: translate(40%, 0%);
   }
   .shop__collection {
