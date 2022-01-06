@@ -17,7 +17,7 @@ html {
 body {
   font-family: var(--font-header);
   /*Possible color fill, background-color: #330033; */
-  background-image: url(/images/endless-constellation.svg);
+  background-color: var(--color-header);
   /* Background by SVGbackgrounds.com */
   max-width: 1280px;
   margin: 0 auto !important;
@@ -596,10 +596,8 @@ p {
   justify-content: space-evenly;
   touch-action: pan-y;
 }
-.shop__cards:hover {
-  transform: translate(20%, 0%);
-}
 .shop__cards {
+  transform: translate(20%, 0%);
   display: inherit;
   transition: 1s ease-in;
 }
