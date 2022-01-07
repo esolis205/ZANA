@@ -24,12 +24,35 @@ body {
 }
 .card__product::-webkit-scrollbar,
 .shop--container::-webkit-scrollbar {
+  width: 15px;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  scroll-padding: 2px;
+}
+.card__product::-webkit-scrollbar-track,
+.shop--container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 grey;
+  border-radius: 10px;
+}
+.card__product::-webkit-scrollbar-thumb,
+.shop--container::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.card__product::-webkit-scrollbar-corner,
+.shop--container::-webkit-scrollbar-corner {
   display: none;
 }
 .card__product,
 .shop--container {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+@media screen and (min-width: 920px) {
+  .card__product::-webkit-scrollbar,
+  .shop--container::-webkit-scrollbar {
+    display: none;
+  }
 }
 @keyframes flickering {
   25% {
@@ -589,7 +612,7 @@ p {
   margin: 4rem;
 }
 .shop--container {
-  height: 50rem;
+  height: 51rem;
   min-height: min-content;
   flex-direction: row;
   overflow: auto;
@@ -658,6 +681,11 @@ p {
 }
 .model {
   transition: scale 3s ease-in;
+}
+@media screen and (min-width: 1020px) {
+  .shop__cards:hover {
+    transform: translate(20%, 0%);
+}
 }
 @media screen and (max-width: 860px) {
   .shop__cards {
