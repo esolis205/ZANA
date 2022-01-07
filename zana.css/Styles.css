@@ -623,6 +623,7 @@ p {
   overflow: auto;
   justify-content: space-evenly;
   touch-action: pan-x;
+  touch-action: pan-y;
 }
 .shop__cards {
   transform: translate(20%, 0%);
