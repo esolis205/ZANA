@@ -623,12 +623,12 @@ p {
   flex-direction: row;
   overflow: auto;
   justify-content: space-evenly;
-  touch-action: pan-x;
 }
 .shop__cards {
   transform: translate(20%, 0%);
   display: inherit;
   transition: 1s ease-in;
+  touch-action: pan-x;
 }
 .card {
   width: 300px;
