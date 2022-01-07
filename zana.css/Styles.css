@@ -681,9 +681,9 @@ p {
   margin-right: 1rem;
 }
 .model:hover {
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-left: 1.5rem;
-  transform: scale(2.8, 2.8);
+  transform: scale(1.5, 1.5);
 }
 .model {
   transition: scale 3s ease-in;
