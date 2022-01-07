@@ -379,6 +379,11 @@ p {
     font-size: 2.8rem;
   }
 }
+@media screen and (max-width: 400px) {
+  .hero__slogan h2 {
+    font-size: 2.2rem;
+  }
+}
 /* Autism Section */
 .autism {
   grid: repeat(2, 1fr) / repeat(2, 1fr);
@@ -685,7 +690,7 @@ p {
 @media screen and (min-width: 1020px) {
   .shop__cards:hover {
     transform: translate(20%, 0%);
-}
+  }
 }
 @media screen and (max-width: 860px) {
   .shop__cards {
