@@ -237,7 +237,7 @@ p {
 }
 @media screen and (max-width: 520px) {
   .flip {
-    animation: flip 3s ease-out 1s 1 normal running;
+    animation: flip 3s ease-out 2s 1 normal running;
     animation-fill-mode: forwards;
   }
 }
