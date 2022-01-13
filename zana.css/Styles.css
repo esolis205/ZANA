@@ -982,7 +982,8 @@ h5 {
   column-gap: 1rem;
   align-content: center;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0.8rem;
+  border-bottom: 2px solid var(--color-text);
 }
 .product_card-img {
   background-color: var(--color-header);
@@ -1001,6 +1002,7 @@ h5 {
   background-color: var(--color-header);
   text-align: center;
   box-shadow: 0 0 8px 1px var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
   padding: 0.3rem;
   border-radius: 20px;
   letter-spacing: 1px;
@@ -1038,5 +1040,31 @@ h5 {
   .product_card-info {
     transform: translatex(-102%) scalex(-1);
     background-color: transparent;
+  }
+}
+/* Tabel */
+.size-chart {
+  max-width: 40rem;
+  margin: 4rem auto;
+}
+table, td, th, thead {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  border: 2px solid var(--color-block);
+  border-collapse: collapse;
+  padding: .4rem;
+}
+table {
+  box-shadow: 0 0 10px 1px var(--color-text);
+}
+@media screen and (max-width: 440px) {
+  table, td, th, thead {
+    font-size: 1.3rem;
+    padding: .2rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  table, td, th, thead {
+    font-size: 1.2rem;
   }
 }
