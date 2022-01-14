@@ -68,19 +68,19 @@ body {
 }
 @keyframes flickering {
   25% {
-    transform: none;
+    /* transform: none; */
     opacity: 0.5;
   }
   50% {
-    transform: none;
+    /* transform: none; */
     opacity: 1;
   }
   75% {
-    transform: none;
+    /* transform: none; */
     opacity: 0.5;
   }
   100% {
-    transform: none;
+    /* transform: none; */
     opacity: 1;
   }
 }
@@ -268,7 +268,7 @@ p {
   animation-fill-mode: both;
 }
 .flickering {
-  animation: flickering 2s 1s infinite normal;
+  animation: flickering 3s 1s infinite normal;
   animation-fill-mode: both;
 }
 .grid {
@@ -941,7 +941,7 @@ h5 {
     font-size: 1.8rem;
   }
 }
-/* /Store */
+/* /Store HTML Page */
 .store {
   margin-bottom: 5rem;
 }
@@ -1044,27 +1044,80 @@ h5 {
 }
 /* Tabel */
 .size-chart {
-  max-width: 40rem;
   margin: 4rem auto;
 }
-table, td, th, thead {
+table,
+td,
+th,
+thead {
   color: var(--color-primary);
   font-size: 1.6rem;
   border: 2px solid var(--color-block);
   border-collapse: collapse;
-  padding: .4rem;
+  padding: 0.4rem;
 }
 table {
   box-shadow: 0 0 10px 1px var(--color-text);
 }
+.table_img {
+  position: relative;
+  max-width: 40rem;
+  margin-left: 1rem;
+  background: linear-gradient(
+    357deg,
+    rgba(243, 99, 201, 1) 30%,
+    rgba(28, 190, 194, 1) 100%
+  );
+}
+.table_img, .table_img img {
+  border-radius: 20px;
+}
+.table_img img {
+  filter: drop-shadow(5px 0px 6px black);
+}
+.table_img p {
+  color: var(--color-block);
+  font-size: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.selector {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--color-text);
+  box-shadow: 0 0 15px 2px var(--color-text);
+  top: 10%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+}
+@media screen and (max-width: 650px) {
+  .size-chart {
+    flex-direction: column;
+  }
+  .table_img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}
 @media screen and (max-width: 440px) {
-  table, td, th, thead {
+  table,
+  td,
+  th,
+  thead {
     font-size: 1.3rem;
-    padding: .2rem;
+    padding: 0.2rem;
   }
 }
 @media screen and (max-width: 340px) {
-  table, td, th, thead {
+  table,
+  td,
+  th,
+  thead {
     font-size: 1.2rem;
   }
 }
