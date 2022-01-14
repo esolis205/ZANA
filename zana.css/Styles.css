@@ -1141,7 +1141,7 @@ table {
   border-radius: 20px;
   box-shadow: 0 0 10px 0 var(--color-text);
 }
-.star {
+.super-star {
   width: 25rem;
   height: 25rem;
   background-color: var(--color-block);
@@ -1158,7 +1158,7 @@ table {
     39% 35%
   );
 }
-.star p {
+.super-star p {
   color: var(--color-primary);
   transform: translate(20%, 400%);
 }
