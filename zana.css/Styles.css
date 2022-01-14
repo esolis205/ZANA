@@ -468,7 +468,7 @@ p {
 }
 .autism__hashtag::before {
   content: "#";
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: var(--color-primary);
 }
 .autism__speak-items h2 {
@@ -1069,7 +1069,8 @@ table {
     rgba(28, 190, 194, 1) 100%
   );
 }
-.table_img, .table_img img {
+.table_img,
+.table_img img {
   border-radius: 20px;
 }
 .table_img img {
@@ -1077,7 +1078,7 @@ table {
 }
 .table_img p {
   color: var(--color-block);
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1120,4 +1121,99 @@ table {
   thead {
     font-size: 1.2rem;
   }
+}
+/* Community Page */
+.community-header {
+  text-align: center;
+  margin: 4rem;
+  border-bottom: 2px solid var(--color-text);
+}
+.community-container {
+  grid-auto-flow: row;
+  margin: 2rem;
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  letter-spacing: 1px;
+}
+.community-container img {
+  max-height: 44rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 var(--color-text);
+}
+.star {
+  width: 25rem;
+  height: 25rem;
+  background-color: var(--color-block);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+.star p {
+  color: var(--color-primary);
+  transform: translate(20%, 400%);
+}
+.star-conatiner {
+  align-self: center;
+  justify-self: center;
+  grid-row: 2;
+}
+.star-conatiner .autism__hashtag {
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.2rem;
+  box-shadow: 0 0 5px 1px var(--color-text);
+}
+.community-info {
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 10px 0 var(--color-text);
+  text-align: center;
+  line-height: 1.4;
+  grid-row: 4;
+}
+.community_future {
+  position: relative;
+}
+.community_future img {
+  filter: brightness(0.6);
+}
+.community_future p {
+  position: absolute;
+  color: var(--color-block);
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 630px) {
+  .star-conatiner .autism__hashtag {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 580px) {
+  .community-container {
+    grid: repeat(2, minmax(25rem, 50rem)) / repeat(2, minmax(25rem, 40rem)); ;
+  }
+  .community-container img {
+    max-height: 50rem;
+  }
+ .community-info {
+   grid-row: auto;
+   grid-column: span 2;
+ }
+ .star-conatiner {
+  grid-row: 1;
+  grid-column: 2;
+ }
 }
