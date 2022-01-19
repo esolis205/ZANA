@@ -218,7 +218,7 @@ video {
   margin: auto;
 }
 h1 {
-  margin: 0 auto;
+  margin: 1rem auto;
   text-align: center;
   font-size: 1.5rem;
   color: silver;
