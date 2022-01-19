@@ -184,11 +184,12 @@ a {
   text-decoration: none;
   color: var(--color-primary);
 }
-label[for="price"] {
+label[for="price"],
+label[for="color"] {
   display: inline-block;
   font-size: 1.6rem;
   border-radius: 5px;
-  box-shadow: 0 0 5px 0 white;
+  box-shadow: 0 0 5px 0 white;`
 }
 input[type="checkbox"] {
   opacity: 0;
