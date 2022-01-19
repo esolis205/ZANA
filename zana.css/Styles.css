@@ -1347,7 +1347,7 @@ table {
 .contact-form_container {
   max-width: 40rem;
   align-self: center;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 0 8px 1px var(--color-primary);
