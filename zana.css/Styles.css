@@ -18,14 +18,20 @@ html {
 *::after,
 *::before {
   box-sizing: border-box;
+  border-radius: 20px;
 }
 body {
-  font-family: var(--font-header);
-  /*Possible color fill, background-color: #330033; */
-  background-color: var(--color-header);
-  /* Background by SVGbackgrounds.com */
   max-width: 1280px;
+  font-family: var(--font-header);
+  font-size: 2rem !important;
+  background-color: var(--color-header);
   margin: 0 auto !important;
+}
+img,
+video {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .card__product::-webkit-scrollbar,
 .shop--container::-webkit-scrollbar {
@@ -178,8 +184,7 @@ a {
   text-decoration: none;
   color: var(--color-primary);
 }
-label[for="price"],
-label[for="color"] {
+.product_card-label {
   display: inline-block;
   font-size: 1.6rem;
   border-radius: 5px;
@@ -205,17 +210,8 @@ select:focus {
   padding: 0;
 }
 img {
-  width: 100%;
-  max-width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-}
-video {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  margin: auto;
 }
 h1 {
   margin: 1rem auto;
@@ -224,19 +220,14 @@ h1 {
   color: silver;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   color: var(--color-primary);
 }
 h3 {
-  font-size: 2rem;
-}
-h3 {
-  color: cornsilk;
   color: var(--color-secondary);
   margin: 1rem auto;
 }
 p {
-  font-size: 2rem;
   color: var(--color-text);
 }
 .badge {
@@ -245,7 +236,6 @@ p {
   text-align: center;
   color: var(--color-text);
   border: 4px solid blue;
-  border-radius: 20px;
   font-size: 2.5rem;
   padding: 4px 0 0;
   font-weight: 900;
@@ -292,6 +282,8 @@ p {
 }
 .grid {
   display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
 }
 .grid--2 {
   display: grid;
@@ -312,7 +304,6 @@ p {
   margin: 4rem auto;
   flex-direction: column;
   box-shadow: 0px 0px 10px 4px var(--color-primary);
-  border-radius: 20px;
   place-self: center;
 }
 @media screen and (max-width: 940px) {
@@ -324,11 +315,12 @@ p {
 .header {
   background-color: var(--color-header);
   box-shadow: 0 0 10px 1px var(--color-primary);
+  justify-content: center;
   margin: 1rem;
-  border-radius: 20px;
 }
 .btn {
   background-color: var(--color-secondary);
+  text-align: center;
   border-style: none;
   border-radius: 30px;
   font-weight: 700;
@@ -336,25 +328,22 @@ p {
   letter-spacing: 1px;
   padding: 8px;
 }
-.header__brand {
-  padding-left: 1px;
-}
 
 .header__letter {
   color: var(--color-primary);
   border-right: 2px solid silver;
-  margin-right: 2rem;
-  font-size: 10rem;
+  margin-right: 1.8rem;
+  font-size: 9rem;
   padding-right: 10px;
   margin-top: 3rem;
   margin-bottom: 0;
+  box-shadow: 6px 0px 3px 0px silver;
 }
 .header__zana {
   display: flex;
   justify-content: center;
 }
 .collection {
-  font-size: 2rem;
   margin: 10px auto 5px;
   color: silver;
   text-align: center;
@@ -362,11 +351,8 @@ p {
 }
 .header__menu-grid {
   grid-template-columns: repeat(5, 1fr);
-  margin: auto 2rem;
-  font-size: 2rem;
   padding: 2rem;
-  justify-content: center;
-  column-gap: 2rem;
+  justify-content: space-evenly;
 }
 .header__menu-list {
   background-color: var(--color-block);
@@ -381,7 +367,7 @@ p {
 }
 @media screen and (max-width: 390px) {
   .header__letter {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .header__collection {
     font-size: 1.5rem;
@@ -390,8 +376,6 @@ p {
 @media screen and (max-width: 868px) {
   .header__menu-grid {
     grid: repeat(3, 1fr) / repeat(2, 1fr);
-    row-gap: 2rem;
-    /* margin: auto 15rem; */
   }
   .list__home {
     grid-column: span 2;
@@ -402,7 +386,6 @@ p {
   max-width: 70rem;
   background-color: var(--color-block);
   box-shadow: 0 0 10px 4px var(--color-primary);
-  border-radius: 20px;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -412,7 +395,6 @@ p {
   background-color: whitesmoke;
   margin: auto 1rem;
   box-shadow: 0 0 20px 8px whitesmoke;
-  border-radius: 20px;
   padding: 0.5rem;
   text-align: center;
   letter-spacing: 0.3rem;
@@ -425,7 +407,6 @@ p {
   display: inline-block;
   width: 17rem;
   height: 4rem;
-  font-size: 2rem;
   margin: 10px 0 20px 0;
 }
 @media screen and (max-width: 730px) {
@@ -437,9 +418,6 @@ p {
     width: 60%;
     max-width: 60%;
     margin: auto;
-  }
-  .hero__slogan h2 {
-    font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 400px) {
@@ -454,7 +432,6 @@ p {
 }
 .autism__speak {
   background-color: var(--color-header);
-  border-radius: 20px;
 }
 .autism__speak-items em {
   color: var(--color-secondary);
@@ -495,7 +472,6 @@ p {
 }
 .container--support {
   background-color: var(--color-header);
-  border-radius: 20px;
   padding: 1rem;
 }
 .container--video {
@@ -514,15 +490,11 @@ p {
   .autism {
     margin: 2rem;
   }
-  .container--support h2 {
-    font-size: 2rem;
-  }
   .container--support p {
     font-size: 1.8rem;
   }
-  .autism__hashtag::before {
-    content: "#";
-    font-size: 2.2rem;
+  .autism__hashtag {
+    font-size: 2rem;
   }
 }
 /* Carousel Block */
@@ -540,7 +512,6 @@ p {
 .carousel__img {
   border: 2px solid var(--color-secondary);
   border-radius: 100px;
-  object-fit: cover;
   box-shadow: 0 0 15px 2px var(--color-primary);
 }
 .carousel__list-template {
@@ -573,6 +544,7 @@ p {
   }
   .carousel__container-img {
     grid-template: repeat(2, 130px) / repeat(2, 130px);
+    margin: 0 auto;
   }
   .carousel-1 {
     animation-name: none;
@@ -612,7 +584,6 @@ p {
 }
 .magnifier-1 {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  border-radius: 20px;
   grid-row: 1;
 }
 .magnifier-2 {
@@ -638,10 +609,8 @@ p {
 }
 .fabric__types {
   text-transform: uppercase;
-  font-size: 2rem;
   border: 2px solid;
   width: 20rem;
-  border-radius: 20px;
   padding: 0.5rem;
   text-align: center;
   display: inline-block;
@@ -649,7 +618,6 @@ p {
 }
 .fabric__explained h2 {
   text-transform: uppercase;
-  font-size: 3rem;
 }
 .fabric__types:hover {
   opacity: 0.5;
@@ -665,11 +633,6 @@ p {
     top: 84%;
     left: 16%;
     transform: translate(-16%, -84%);
-  }
-}
-@media screen and (max-width: 768px) {
-  .fabric__explained h2 {
-    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -703,7 +666,6 @@ p {
   background-color: var(--color-secondary);
   box-shadow: 7px 6px 2px 0px purple;
   transition: 0.3s;
-  border-radius: 20px;
   flex: 1;
 }
 .card h2 h3 h4 {
@@ -716,7 +678,6 @@ p {
   width: 280px;
   height: 360px;
   background-color: var(--color-secondary);
-  border-radius: 20px;
   box-shadow: inset 1px 1px 80px 24px lightgrey;
   overflow: hidden scroll;
   scroll-behavior: smooth;
@@ -724,7 +685,6 @@ p {
 .card__price {
   width: 28rem;
   height: 10rem;
-  border-radius: 20px;
   text-align: center;
   align-items: center;
   margin-top: 0.7rem;
@@ -738,8 +698,6 @@ p {
 }
 .card__btn {
   width: 10rem;
-  font-size: 2rem;
-  text-align: center;
   background-color: transparent;
   color: var(--color-header);
   box-shadow: inset 0 0 30px 2px white;
@@ -819,7 +777,7 @@ form {
 }
 label {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600;
   color: var(--color-primary);
 }
@@ -830,10 +788,8 @@ input[type="text"],
 textarea {
   width: 100%;
   border: 1px solid var(--color-primary);
-  border-radius: 20px;
   padding: 0.5rem 1rem;
   transition: border-color 0.15s, box-shadow 0.15s;
-  font-size: 2rem;
   box-shadow: 0 0 10px 0 var(--color-primary);
 }
 input[type="text"]:hover,
@@ -852,11 +808,9 @@ textarea:focus {
 }
 button {
   width: 12rem;
-  font-size: 2rem;
   background: var(--color-text);
   color: var(--color-header);
   border: 0;
-  border-radius: 20px;
   padding: 0.5rem 1rem;
   outline: 0;
   margin: 1rem;
@@ -871,13 +825,6 @@ button:hover {
   }
 }
 @media screen and (max-width: 430px) {
-  input[type="text"],
-  [type="email"] {
-    font-size: 2rem;
-  }
-  label {
-    font-size: 2rem;
-  }
   button {
     width: 10rem;
     font-size: 1.5rem;
@@ -925,7 +872,6 @@ button:hover {
   height: 25rem;
   flex-direction: column-reverse;
   background-color: var(--color-header);
-  border-radius: 20px;
   box-shadow: 0 0 10px 1px var(--color-primary);
   margin: 1rem;
 }
@@ -986,7 +932,6 @@ h5 {
   height: 55rem;
   position: relative;
   margin: 2rem auto;
-  border-radius: 20px;
   background: var(--color-header);
   box-shadow: 0 0 10px 1px white;
   overflow: hidden;
@@ -1003,7 +948,6 @@ h5 {
 }
 .store-product {
   grid-template-rows: repeat(2, minmax(25rem, 30rem));
-  row-gap: 2rem;
 }
 .product_card {
   grid-template-columns: repeat(2, 1fr);
@@ -1016,12 +960,8 @@ h5 {
 .product_card-img {
   background-color: var(--color-header);
   padding: 1rem;
-  border-radius: 20px;
   box-shadow: inset 0 0 10px 0 var(--color-text);
   overflow: hidden;
-}
-.product_card-img img {
-  border-radius: 20px;
 }
 .product_card-info p {
   font-size: 1.4rem;
@@ -1032,7 +972,6 @@ h5 {
   box-shadow: 0 0 8px 1px var(--color-primary);
   border-bottom: 2px solid var(--color-primary);
   padding: 0.3rem;
-  border-radius: 20px;
   letter-spacing: 1px;
 }
 .product_card-btn {
@@ -1080,26 +1019,20 @@ th,
 thead {
   color: var(--color-primary);
   font-size: 1.6rem;
-  border: 2px solid var(--color-block);
+  border: 1px solid var(--color-block);
   border-collapse: collapse;
   padding: 0.4rem;
-}
-table {
-  box-shadow: 0 0 10px 1px var(--color-text);
 }
 .table_img {
   position: relative;
   max-width: 40rem;
   margin-left: 1rem;
+  box-shadow: -1px 1px 8px 1px var(--color-block);
   background: linear-gradient(
     357deg,
     rgba(243, 99, 201, 1) 30%,
     rgba(28, 190, 194, 1) 100%
   );
-}
-.table_img,
-.table_img img {
-  border-radius: 20px;
 }
 .table_img img {
   filter: drop-shadow(5px 0px 6px black);
@@ -1160,13 +1093,10 @@ table {
   grid-auto-flow: row;
   margin: 2rem;
   justify-content: center;
-  column-gap: 2rem;
-  row-gap: 2rem;
   letter-spacing: 1px;
 }
 .community-container img {
   max-height: 44rem;
-  border-radius: 20px;
   box-shadow: 0 0 10px 0 var(--color-text);
 }
 .super-star {
@@ -1187,8 +1117,9 @@ table {
   );
 }
 .super-star p {
+  display: inline-block;
   color: var(--color-primary);
-  transform: translate(20%, 400%);
+  transform: translate(30%, 315%);
 }
 .star-conatiner {
   align-self: center;
@@ -1203,7 +1134,6 @@ table {
   box-shadow: 0 0 5px 1px var(--color-text);
 }
 .community-info {
-  border-radius: 20px;
   padding: 1rem;
   box-shadow: 0 0 10px 0 var(--color-text);
   text-align: center;
@@ -1266,13 +1196,11 @@ table {
 .about_contents {
   grid-auto-columns: minmax(25rem, 50rem);
   text-align: center;
-  row-gap: 2rem;
   justify-content: center;
 }
 .about_contents img,
 .about_vision,
 .about_zana {
-  border-radius: 20px;
   box-shadow: 0 0 10px 0 var(--color-text);
 }
 .about_vision,
@@ -1286,7 +1214,6 @@ table {
   display: block;
   width: 50%;
   margin: 0 auto;
-  border-radius: 20px;
   font-size: 1.6rem;
   background: none;
   box-shadow: inset 0 0 10px 0 white;
@@ -1297,7 +1224,6 @@ table {
         2,
         minmax(25rem, 50rem)
       );
-    column-gap: 2rem;
   }
   .img-door {
     grid-row: 1 / span 2;
@@ -1318,6 +1244,7 @@ table {
   height: 25rem;
   text-align: center;
   padding: 0.5rem;
+  border-radius: initial;
   background: linear-gradient(
     357deg,
     rgba(243, 99, 201, 1) 30%,
@@ -1344,7 +1271,6 @@ table {
   align-self: center;
   margin: 1rem 0;
   padding: 1rem;
-  border-radius: 20px;
   box-shadow: 0 0 8px 1px var(--color-primary);
 }
 textarea {
@@ -1374,14 +1300,12 @@ textarea {
   flex: 1;
   padding: 1rem;
   box-shadow: 0 0 8px 1px var(--color-block);
-  border-radius: 20px;
   padding: 0.8rem;
 }
 .account-actions {
   height: 20rem;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
   flex: 1;
   background: linear-gradient(
     357deg,
@@ -1389,12 +1313,10 @@ textarea {
     rgba(28, 190, 194, 1) 100%
   );
   margin: 4rem 0;
-  font-size: 2rem;
 }
 .account-actions_links {
   margin: 1rem;
   box-shadow: 0 0 8px 1px var(--color-block);
-  border-radius: 20px;
   padding: 0.8rem;
 }
 .account-actions_links:hover {
