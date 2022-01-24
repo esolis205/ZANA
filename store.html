@@ -17,89 +17,109 @@
     <link rel="stylesheet" href="/zana.css/Styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <script
       src="https://kit.fontawesome.com/ff7436e587.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=El+Messiri&family=Montserrat:wght@300&display=swap");
+    </style>
     <title>Zana Brand Store</title>
   </head>
   <body>
-      <!-- Header -->
-      <header class="zana" id="header">
-        <section class="header grid">
-          <section class="header--blocks">
-            <div class="header__brand">
-              <div class="header__zana">
-                <p class="header__letter">Z</p>
-                <p class="header__letter">A</p>
-                <p class="header__letter">N</p>
-                <p class="header__letter">A</p>
-              </div>
-              <h1>ZANA BRAND</h1>
+    <!-- Header -->
+    <header class="zana" id="header">
+      <section class="header grid">
+        <section class="header--blocks">
+          <div class="header__brand">
+            <div class="header__zana">
+              <p class="header__letter">Z</p>
+              <p class="header__letter">A</p>
+              <p class="header__letter">N</p>
+              <p class="header__letter">A</p>
             </div>
+            <h1>ZANA BRAND</h1>
+          </div>
         </section>
-          <section>
-            <div class="header__menu-grid grid">
-                
-                  <a class="header__menu-list list__home" href="/home.html"
-                    ><i class="fas fa-home header__icon"></i>Home</a
-                  >
-                
-                
-                  <a class="header__menu-list" href="/store.html"
-                    ><i class="fas fa-shopping-bag header__icon"></i>Store</a
-                  >
-                
-                
-                  <a class="header__menu-list" href="/community.html"
-                    ><i class="fas fa-hands-helping header__icon"></i>Community</a
-                  >
-                
-                
-                  <a class="header__menu-list" href="/about-us.html"
-                    ><i class="fab fa-leanpub header__icon"></i>About Us</a
-                  >
-                
-                
-                  <a class="header__menu-list" href="/account.html"
-                    ><i class="far fa-user-circle header__icon"></i>Account</a
-                  >
-              </div>
-          </section>
+        <section>
+          <div class="header__menu-grid grid">
+            <a class="header__menu-list list__home" href="/home.html"
+              ><i class="fas fa-home header__icon"></i>Home</a
+            >
+
+            <a class="header__menu-list" href="/store.html"
+              ><i class="fas fa-shopping-bag header__icon"></i>Store</a
+            >
+
+            <a class="header__menu-list" href="/community.html"
+              ><i class="fas fa-hands-helping header__icon"></i>Community</a
+            >
+
+            <a class="header__menu-list" href="/about-us.html"
+              ><i class="fab fa-leanpub header__icon"></i>About Us</a
+            >
+
+            <a class="header__menu-list" href="/home.html"
+              ><i class="far fa-user-circle header__icon"></i>Account</a
+            >
+          </div>
         </section>
-      </header>
-        <!--Store -->
-        <section class="store-banner">
-              <img src="/images/pexels-chevanon-photography-store.webp" alt="Woman performing yoga exercise, with a clear blue sky as the backgground.">
-              <p>Don't just see the change. Feel the change.</p>
-        </section>
-        <h2 class="store-header" id="store">Store</h2>
-        <Section class="store">
-            <section class="store-product grid">
-              <div class="product_card grid">
-                <div class="product_card-img">
-                  <img src="/images/showcase-cardx800.png" alt="">
-                </div>
-                <div class="product_card-info flip flip-right">
-                  <p>Limited Edition</p>
-                  <p>ZANA All-Performance Crossover Leggings <br>+<br> Motion-Control Sports Bra <br>Black-set<br></p>
-                  <div class="description">
-                    <h3>$45</h3>
-                    <p class="size-p">Select size to purchase.</p>
-                    <a href="https://buy.stripe.com/dR6dUVgEffKBeAgfYY" class="size-btn">S</a>
-                    <a href="https://buy.stripe.com/7sIcQR9bNdCt0JqdQR" class="size-btn">M</a>
-                    <a href="https://buy.stripe.com/9AQ2cdew741T2RyaEG" class="size-btn">L</a>
-                    <a href="https://buy.stripe.com/dR67wxbjVfKBgIoaEH" class="size-btn">XL</a>
-                  </div>
-                  <!-- <form class="product_card-form" action="/create-checkout-session" method="POST">
+      </section>
+    </header>
+    <!--Store -->
+    <section class="store-banner">
+      <img
+        src="/images/pexels-chevanon-photography-store.webp"
+        alt="Woman performing yoga exercise, with a clear blue sky as the backgground."
+      />
+      <p>Don't just see the change. Feel the change.</p>
+    </section>
+    <h2 class="store-header" id="store">Store</h2>
+    <section class="store">
+      <section class="store-product grid">
+        <div class="product_card grid">
+          <div class="product_card-img">
+            <img src="/images/showcase-cardx800.png" alt="" />
+          </div>
+          <div class="product_card-info flip flip-right">
+            <p>Limited Edition</p>
+            <p>
+              ZANA All-Performance Crossover Leggings <br />+<br />
+              Motion-Control Sports Bra <br />Black-set<br />
+            </p>
+            <div class="description">
+              <h3>$45</h3>
+              <p class="size-p">Select size to purchase.</p>
+              <a
+                href="https://buy.stripe.com/dR6dUVgEffKBeAgfYY"
+                class="size-btn"
+                >S</a
+              >
+              <a
+                href="https://buy.stripe.com/7sIcQR9bNdCt0JqdQR"
+                class="size-btn"
+                >M</a
+              >
+              <a
+                href="https://buy.stripe.com/9AQ2cdew741T2RyaEG"
+                class="size-btn"
+                >L</a
+              >
+              <a
+                href="https://buy.stripe.com/dR67wxbjVfKBgIoaEH"
+                class="size-btn"
+                >XL</a
+              >
+            </div>
+            <!-- <form class="product_card-form" action="/create-checkout-session" method="POST">
                     <select name="size">
                       <option value="">Size...</option>
                       <option value="s">SM</option>
@@ -115,24 +135,43 @@
                           <button class="product_card-btn" type="submit">Purchase</button>
                         </div>
                       </form> -->
-                    </div>
-              </div>
-              <div class="product_card grid">
-                <div class="product_card-img">
-                  <img src="/images/shop-card-image-pink.webp" alt="">
-                </div>
-                <div class="product_card-info flip flip-right">
-                  <p>Limited Edition</p>
-                  <p>ZANA All-Performance Crossover Leggings <br>+<br> Motion-Control Sports Bra <br>Pink-Set<br></p>
-                  <div class="description">
-                    <h3>$45</h3>
-                    <p class="size-p">Select size to purchase.</p>
-                    <a href="https://buy.stripe.com/8wM5op1Jlcypdwc004" class="size-btn">S</a>
-                    <a href="https://buy.stripe.com/eVaaIJ87JfKBgIobIP" class="size-btn">M</a>
-                    <a href="https://buy.stripe.com/bIY3ghds3cyp2Ry8wC" class="size-btn">L</a>
-                    <a href="https://buy.stripe.com/aEUaIJ87J0PH4ZG4gl" class="size-btn">XL</a>
-                  </div>
-                  <!-- <form class="product_card-form" action="">
+          </div>
+        </div>
+        <div class="product_card grid">
+          <div class="product_card-img">
+            <img src="/images/shop-card-image-pink.webp" alt="" />
+          </div>
+          <div class="product_card-info flip flip-right">
+            <p>Limited Edition</p>
+            <p>
+              ZANA All-Performance Crossover Leggings <br />+<br />
+              Motion-Control Sports Bra <br />Pink-Set<br />
+            </p>
+            <div class="description">
+              <h3>$45</h3>
+              <p class="size-p">Select size to purchase.</p>
+              <a
+                href="https://buy.stripe.com/8wM5op1Jlcypdwc004"
+                class="size-btn"
+                >S</a
+              >
+              <a
+                href="https://buy.stripe.com/eVaaIJ87JfKBgIobIP"
+                class="size-btn"
+                >M</a
+              >
+              <a
+                href="https://buy.stripe.com/bIY3ghds3cyp2Ry8wC"
+                class="size-btn"
+                >L</a
+              >
+              <a
+                href="https://buy.stripe.com/aEUaIJ87J0PH4ZG4gl"
+                class="size-btn"
+                >XL</a
+              >
+            </div>
+            <!-- <form class="product_card-form" action="">
                     <select name="size">
                       <option value="">Size...</option>
                       <option value="s">SM</option>
@@ -148,179 +187,182 @@
                       <button class="product_card-btn" type="submit">Purchase</button>
                     </div>
                   </form> -->
-                </div>
-              </div>
-            </section>
-        </Section>
-        <div class="size-chart flex__box">
-          <table>
-            <thead>
-              <th colspan="9">Size Chart</th>
-            </thead>
-            <th colspan="9">ZANA Leggings</th>
-            <tr>
-              <th>Type</th>
-              <th colspan="2">S</th>
-              <th colspan="2">M</th>
-              <th colspan="2">L</th>
-              <th colspan="2">XL</th>
-            </tr>
-            <tr>
-              <th>*</th>
-              <th>CM</th>
-              <th>INCH</th>
-              <th>CM</th>
-              <th>INCH</th>
-              <th>CM</th>
-              <th>INCH</th>
-              <th>CM</th>
-              <th>INCH</th>
-            </tr>
-            <colgroup>
-              <td>Waist</td>
-              <td>54</td>
-              <td>21 1/4</td>
-              <td>58</td>
-              <td>22 3/4</td>
-              <td>62</td>
-              <td>24 1/4</td>
-              <td>66</td>
-              <td>25 3/4</td>
-            </colgroup>
-            <colgroup>
-              <td>Hip</td>
-              <td>76</td>
-              <td>30</td>
-              <td>80</td>
-              <td>31 1/2</td>
-              <td>84</td>
-              <td>33</td>
-              <td>88</td>
-              <td>34 1/2</td>
-            </colgroup>
-            <colgroup>
-              <td>Front Raise</td>
-              <td>17.3</td>
-              <td>6 3/4</td>
-              <td>18</td>
-              <td>7</td>
-              <td>18.7</td>
-              <td>7 1/4</td>
-              <td>19.4</td>
-              <td>7 1/2</td>
-            </colgroup>
-            <colgroup>
-              <td>Back Raise</td>
-              <td>23.3</td>
-              <td>8 1/4</td>
-              <td>24</td>
-              <td>8 1/2</td>
-              <td>24.7</td>
-              <td>8 3/4</td>
-              <td>25.4</td>
-              <td>9</td>
-            </colgroup>
-            <colgroup>
-              <td>Leg Opening</td>
-              <td>21</td>
-              <td>8 1/4</td>
-              <td>22</td>
-              <td>8 5/8</td>
-              <td>23</td>
-              <td>9</td>
-              <td>24</td>
-              <td>9 3/8</td>
-            </colgroup>
-            <colgroup>
-              <td>Inseam</td>
-              <td>67.3</td>
-              <td>26 1/2</td>
-              <td>68.5</td>
-              <td>27</td>
-              <td>69.7</td>
-              <td>27 1/2</td>
-              <td>70.9</td>
-              <td>28</td>
-            </colgroup>
-            <thead>
-              <th colspan="9">Size Chart</th>
-            </thead>
-            <th colspan="9">ZANA BRA</th>
-            <tr>
-              <th>Type</th>
-              <th colspan="2">S</th>
-              <th colspan="2">M</th>
-              <th colspan="2">L</th>
-              <th colspan="2">XL</th>
-            </tr>
-            <tr>
-              <th>*</th>
-              <th>CM</th>
-              <th>INCH</th>
-              <th>CM</th>
-              <th>INCH</th>
-              <th>CM</th>
-              <th>INCH</th>
-              <th>CM</th>
-              <th>INCH</th>
-            </tr>
-            <colgroup>
-              <td>Length</td>
-              <td>31</td>
-              <td>12 1/8</td>
-              <td>32</td>
-              <td>12 1/2</td>
-              <td>33</td>
-              <td>12 7/8</td>
-              <td>34</td>
-              <td>13 1/4</td>
-            </colgroup>
-            <colgroup>
-              <td>Chest</td>
-              <td>68</td>
-              <td>26 3/4</td>
-              <td>72</td>
-              <td>28 1/4</td>
-              <td>76</td>
-              <td>29 3/4</td>
-              <td>80</td>
-              <td>31 1/4</td>
-            </colgroup>
-            <colgroup>
-              <td>Waist</td>
-              <td>60</td>
-              <td>23 1/2</td>
-              <td>64</td>
-              <td>25</td>
-              <td>68</td>
-              <td>26 1/2</td>
-              <td>72</td>
-              <td>28</td>
-            </colgroup>
-          </table>
-          <div class="table_img">
-            <img src="/images/Chart-div-img.png" alt="Model wearing Zana leggings and sports bra.">
-            <p>You deserve it.</p>
-            <a class="selector flickering" href="#store"></a>
           </div>
         </div>
-        <!-- Footer --> 
-        <section class="footer flex__box">
-            <div class="copy">
-                <a href="#header">
-                  <h5>ZANA BRAND</h5>
-                </a>
-                <span class="copy">&copy;ZANA BRAND</span>
-                <P class="copy__reserved">All Rights Reserved</P>
-            </div>
-            <div class="footer__list">
-                <div class="footer__items">
-                    <a href="#"><p class="footer__item">Privacy Policy</p></a>
-                    <a href="#"><p class="footer__item">Shipping & Returns</p></a>
-                    <a href="/about-us.html"><p class="footer__item">About Us</p></a>
-                    <a href="/about-us.html"><p class="footer__item">Contact Us</p></a>
-                </div>
-            </div>
-        </section>
+      </section>
+    </section>
+    <div class="size-chart flex__box">
+      <table>
+        <thead>
+          <th colspan="9">Size Chart</th>
+        </thead>
+        <th colspan="9">ZANA Leggings</th>
+        <tr>
+          <th>Type</th>
+          <th colspan="2">S</th>
+          <th colspan="2">M</th>
+          <th colspan="2">L</th>
+          <th colspan="2">XL</th>
+        </tr>
+        <tr>
+          <th>*</th>
+          <th>CM</th>
+          <th>INCH</th>
+          <th>CM</th>
+          <th>INCH</th>
+          <th>CM</th>
+          <th>INCH</th>
+          <th>CM</th>
+          <th>INCH</th>
+        </tr>
+        <colgroup>
+          <td>Waist</td>
+          <td>54</td>
+          <td>21 1/4</td>
+          <td>58</td>
+          <td>22 3/4</td>
+          <td>62</td>
+          <td>24 1/4</td>
+          <td>66</td>
+          <td>25 3/4</td>
+        </colgroup>
+        <colgroup>
+          <td>Hip</td>
+          <td>76</td>
+          <td>30</td>
+          <td>80</td>
+          <td>31 1/2</td>
+          <td>84</td>
+          <td>33</td>
+          <td>88</td>
+          <td>34 1/2</td>
+        </colgroup>
+        <colgroup>
+          <td>Front Raise</td>
+          <td>17.3</td>
+          <td>6 3/4</td>
+          <td>18</td>
+          <td>7</td>
+          <td>18.7</td>
+          <td>7 1/4</td>
+          <td>19.4</td>
+          <td>7 1/2</td>
+        </colgroup>
+        <colgroup>
+          <td>Back Raise</td>
+          <td>23.3</td>
+          <td>8 1/4</td>
+          <td>24</td>
+          <td>8 1/2</td>
+          <td>24.7</td>
+          <td>8 3/4</td>
+          <td>25.4</td>
+          <td>9</td>
+        </colgroup>
+        <colgroup>
+          <td>Leg Opening</td>
+          <td>21</td>
+          <td>8 1/4</td>
+          <td>22</td>
+          <td>8 5/8</td>
+          <td>23</td>
+          <td>9</td>
+          <td>24</td>
+          <td>9 3/8</td>
+        </colgroup>
+        <colgroup>
+          <td>Inseam</td>
+          <td>67.3</td>
+          <td>26 1/2</td>
+          <td>68.5</td>
+          <td>27</td>
+          <td>69.7</td>
+          <td>27 1/2</td>
+          <td>70.9</td>
+          <td>28</td>
+        </colgroup>
+        <thead>
+          <th colspan="9">Size Chart</th>
+        </thead>
+        <th colspan="9">ZANA BRA</th>
+        <tr>
+          <th>Type</th>
+          <th colspan="2">S</th>
+          <th colspan="2">M</th>
+          <th colspan="2">L</th>
+          <th colspan="2">XL</th>
+        </tr>
+        <tr>
+          <th>*</th>
+          <th>CM</th>
+          <th>INCH</th>
+          <th>CM</th>
+          <th>INCH</th>
+          <th>CM</th>
+          <th>INCH</th>
+          <th>CM</th>
+          <th>INCH</th>
+        </tr>
+        <colgroup>
+          <td>Length</td>
+          <td>31</td>
+          <td>12 1/8</td>
+          <td>32</td>
+          <td>12 1/2</td>
+          <td>33</td>
+          <td>12 7/8</td>
+          <td>34</td>
+          <td>13 1/4</td>
+        </colgroup>
+        <colgroup>
+          <td>Chest</td>
+          <td>68</td>
+          <td>26 3/4</td>
+          <td>72</td>
+          <td>28 1/4</td>
+          <td>76</td>
+          <td>29 3/4</td>
+          <td>80</td>
+          <td>31 1/4</td>
+        </colgroup>
+        <colgroup>
+          <td>Waist</td>
+          <td>60</td>
+          <td>23 1/2</td>
+          <td>64</td>
+          <td>25</td>
+          <td>68</td>
+          <td>26 1/2</td>
+          <td>72</td>
+          <td>28</td>
+        </colgroup>
+      </table>
+      <div class="table_img">
+        <img
+          src="/images/Chart-div-img.png"
+          alt="Model wearing Zana leggings and sports bra."
+        />
+        <p>You deserve it.</p>
+        <a class="selector flickering" href="#store"></a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <section class="footer flex__box">
+      <div class="copy">
+        <a href="#header">
+          <h5>ZANA BRAND</h5>
+        </a>
+        <span class="copy">&copy;ZANA BRAND</span>
+        <p class="copy__reserved">All Rights Reserved</p>
+      </div>
+      <div class="footer__list">
+        <div class="footer__items">
+          <a href="/policy.html"><p class="footer__item">Privacy Policy</p></a>
+          <a href="/return.html"><p class="footer__item">Shipping & Returns</p></a>
+          <a href="/about-us.html"><p class="footer__item">About Us</p></a>
+          <a href="/about-us.html"><p class="footer__item">Contact Us</p></a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -27,6 +27,9 @@ body {
   background-color: var(--color-header);
   margin: 0 auto !important;
 }
+.policy {
+  background-color: var(--color-text);
+}
 img,
 video {
   max-width: 100%;
@@ -338,7 +341,7 @@ p {
   padding-right: 10px;
   margin-top: 3rem;
   margin-bottom: 0;
-  box-shadow: 6px 0px 3px 0px silver;
+  box-shadow: 3px 0px 1px 1px silver;
 }
 .header__zana {
   display: flex;
@@ -369,6 +372,8 @@ p {
 @media screen and (max-width: 390px) {
   .header__letter {
     font-size: 6rem;
+    padding: 0.5rem;
+    box-shadow: 3px 0px 0px -1px silver;
   }
   .header__collection {
     font-size: 1.5rem;
@@ -925,6 +930,7 @@ h5 {
   font-size: 4rem;
   letter-spacing: 2px;
   margin: 3rem;
+  border-radius: initial;
   text-shadow: -2px 3px #ff00d04d;
   border-bottom: 2px double var(--color-text);
 }
@@ -988,8 +994,8 @@ h5 {
 }
 .size-btn {
   font-weight: 600;
-  padding: .5rem;
-  margin: .5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 .size-p {
   color: var(--color-block);
@@ -1040,7 +1046,7 @@ thead {
   position: relative;
   max-width: 40rem;
   margin-left: 1rem;
-  box-shadow: -1px 1px 8px 1px var(--color-block);
+  box-shadow: 0 0 8px 0 var(--color-block);
   background: linear-gradient(
     357deg,
     rgba(243, 99, 201, 1) 30%,
@@ -1337,4 +1343,40 @@ textarea {
 }
 .account-actions a {
   color: var(--color-header) !important;
+}
+/* Privacy Policy */
+.legalForm {
+  padding: 1rem;
+  margin: 2rem auto;
+}
+.policy-selector {
+  background-color: silver;
+  box-shadow: 0 0 15px 2px silver;
+  position: fixed;
+  top: 27%;
+  left: 93%;
+  transform: translate(-27%, -80%);
+}
+.policy-header,
+.policy-footer {
+  background-color: var(--color-text);
+  box-shadow: unset;
+}
+.policy-footer span,
+.policy-footer p {
+  color: var(--color-header);
+}
+.header_menu-policy {
+  background-color: initial;
+  box-shadow: 0 0 4px 2px silver;
+}
+/* Return Form*/
+.return-form p {
+  color: var(--color-header);
+}
+.returns-address {
+  text-decoration: underline;
+}
+.returns-list {
+  list-style-type: square;
 }
