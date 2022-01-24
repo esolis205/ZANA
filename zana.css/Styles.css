@@ -184,7 +184,8 @@ a {
   text-decoration: none;
   color: var(--color-primary);
 }
-.product_card-label {
+.product_card-label,
+.size-btn {
   display: inline-block;
   font-size: 1.6rem;
   border-radius: 5px;
@@ -980,6 +981,18 @@ h5 {
   font-size: 1.6rem;
   margin: 2rem auto;
   box-shadow: 0 0 5px 1px white;
+}
+.description h3 {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+.size-btn {
+  font-weight: 600;
+  padding: .5rem;
+  margin: .5rem;
+}
+.size-p {
+  color: var(--color-block);
 }
 @media screen and (max-width: 1040px) {
   .store-banner {
