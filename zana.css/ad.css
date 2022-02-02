@@ -1,0 +1,252 @@
+html {
+    font-size: 62.5%;
+}
+:root {
+    --color-primary-ad: #cccccc;
+    --color-primary-shadow-ad: #e6e6e6;
+    --color-secondary-ad: #00ffff;
+    --color-secondary-shadow-ad: #80ffff;
+    --color-letter-ad: #ff00ff;
+    --color-letter-shadow-ad: #ff4dff; 
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    border-radius: 20px;
+    z-index: 1;
+}
+@keyframes lights {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    10%, 20%, 30%, 40%, 50% {
+        opacity: .5;
+    }
+    60%, 70%, 80%, 90%, 100% {
+        opacity: 1;
+    }
+}
+@keyframes tada-background {
+    100% {
+        background: linear-gradient(90deg, rgba(200,0,155,1) 0%, rgba(4,4,4,4) 60%); 
+    }
+}
+@keyframes tada-discover {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tada-discover_img {
+    100% {
+        opacity: 0.4;
+    }
+}
+@keyframes hovering-lights_1 {
+    5%, 10%, 25% {
+        opacity: 1;
+        transition: opacity 5s;
+    }
+    30%, 35%, 50% {
+        box-shadow: 0 0 8px 0 whitesmoke;
+        transition: box-shadow 5s 5s;
+    }
+    55%, 60%, 75% {
+        transform: translate(700%, 700%);
+        transition: translate 5s 10s;
+    }
+    80%, 85%, 100% {
+        opacity: 0;
+        transition: opacity 5s 20s;
+    }
+}
+@keyframes hovering-lights_2 {
+    5%, 10%, 25% {
+        opacity: 1;
+        transition: opacity 5s;
+    }
+    30%, 35%, 50% {
+        box-shadow: 0 0 8px 0 whitesmoke;
+        transition: box-shadow 5s 5s;
+    }
+    55%, 60%, 75% {
+        transform: translate(-700%, 700%);
+        transition: translate 5s 10s;
+    }
+    80%, 85%, 100% {
+        opacity: 0;
+        transition: opacity 5s 20s;
+    }
+}
+@keyframes hovering-lights_3 {
+    5%, 10%, 25% {
+        opacity: 1;
+        transition: opacity 5s;
+    }
+    30%, 35%, 50% {
+        box-shadow: 0 0 8px 0 whitesmoke;
+        transition: box-shadow 5s 5s;
+    }
+    55%, 60%, 75% {
+        transform: translate(-700%, -700%);
+        transition: translate 5s 10s;
+    }
+    80%, 85%, 100% {
+        opacity: 0;
+        transition: opacity 5s 20s;
+    }
+}
+@keyframes hovering-lights_4 {
+    5%, 10%, 25% {
+        opacity: 1;
+        transition: opacity 5s;
+    }
+    30%, 35%, 50% {
+        box-shadow: 0 0 8px 0 whitesmoke;
+        transition: box-shadow 5s 5s;
+    }
+    55%, 60%, 75% {
+        transform: translate(700%, -700%);
+        transition: translate 5s 10s;
+    }
+    80%, 85%, 100% {
+        opacity: 0;
+        transition: opacity 5s 20s;
+    }
+}
+.hovering-lights_1 {
+    animation: hovering-lights_1 15s ease-out both;
+}
+.hovering-lights_2 {
+    animation: hovering-lights_2 15s ease-out both;
+}
+.hovering-lights_3 {
+    animation: hovering-lights_3 15s ease-out both;
+}
+.hovering-lights_4 {
+    animation: hovering-lights_4 15s ease-out both;
+}
+.appear {
+    animation: appear 5s ease-out 1s 1 both;
+}
+.tada-background {
+    animation: tada-background 5s ease-in 10s 1 both;
+}
+.tada-discover {
+    animation: tada-discover 5s ease-in 10s 1 both;
+}
+.tada-discover_img {
+    animation: tada-discover_img 5s ease-in 10s 1 both;
+}
+/* .lights{
+    animation: lights 10s ease-out 0s 1 both;
+} */
+body {
+    background: #000;
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.main-container {
+    max-width: 50rem;
+    height: 50rem;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+    background: #000;
+    letter-spacing: 1px;
+    /* box-shadow: 0 0 8px 1px var(--color-secondary-shadow); */
+    /* background: linear-gradient(90deg, rgba(200,0,155,1) 0%, rgba(4,4,4,4) 60%); */
+}
+.letter-ad {
+    font-size: 6rem;
+    opacity: 0;
+    margin: 1rem;
+    padding: 0.2rem 0.8rem;
+    color: var(--color-letter-ad);
+    box-shadow: 5px 0 2px 0px var(--color-primary-ad);
+    text-shadow: 0 0 5px 0 var(--color-letter-shadow-ad);
+}
+
+.main-container_img {
+    width: 37rem;
+    z-index: 0;
+    opacity: 0;
+    position: absolute;
+}
+.zana_brand {
+    opacity: 0;
+    font-size: 1.5rem;
+    color: var(--color-primary-ad);
+}
+.ad-tag {
+    opacity: 0;
+    padding: 0.5rem;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: var(--color-letter-ad);
+}
+.button {
+    opacity: 0;
+    font-size: 2rem;
+    padding: 0.6rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color-secondary-ad);
+    box-shadow: 0 0 4px 1px var(--color-secondary-shadow-ad);
+}
+.button:hover {
+    box-shadow: inset 0 0 4px 1px var(--color-secondary-shadow-ad);
+}
+.stage-light {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    background: var(--color-primary-ad);
+    border-radius: 100%;
+}
+.light-1 {
+    right: 88%;
+    bottom: 88%;
+    transform: translate(-38%, -38%);
+    box-shadow: 105px 100px 150px 50px whitesmoke;
+}
+.light-1_2 {
+    box-shadow: 26px 20px 60px 20px whitesmoke;
+}
+.light-2 {
+    left: 88%;
+    bottom: 88%;
+    transform: translate(38%, -38%);
+    box-shadow: -105px 100px 150px 50px whitesmoke;
+}
+.light-2_2 {
+    box-shadow: -26px 20px 60px 20px whitesmoke;
+}
+.light-3 {
+    left: 88%;
+    top: 88%;
+    transform: translate(38%, 38%);
+    box-shadow: -105px -100px 150px 50px whitesmoke;
+}
+.light-3_2 {
+    box-shadow: -26px -20px 60px 20px whitesmoke;
+}
+.light-4 {
+    right: 88%;
+    top: 88%;
+    transform: translate(-38%, 38%);
+    box-shadow: 105px -100px 150px 50px whitesmoke;
+}
+.light-4_2 {
+    box-shadow: 26px -20px 60px 20px whitesmoke;
+}
