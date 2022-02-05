@@ -1400,3 +1400,8 @@ textarea {
 .returns-list {
   list-style-type: square;
 }
+/* ad */
+iframe {
+  position: absolute;
+  opacity: 0;
+}
