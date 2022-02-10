@@ -72,6 +72,24 @@ video {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+@keyframes carousel-table_img {
+  0% {
+    transform: translateX(100%);
+  }
+  60%,
+  70% {
+    transform: translateX(0);
+  }
+  90%,
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide-img_2 {
+  100% {
+    transform: translate(110%);
+  }
+}
 @keyframes slide {
   100% {
     transform: translate(2%, 0);
@@ -91,19 +109,15 @@ video {
 }
 @keyframes flickering {
   25% {
-    /* transform: none; */
     opacity: 0.5;
   }
   50% {
-    /* transform: none; */
     opacity: 1;
   }
   75% {
-    /* transform: none; */
     opacity: 0.5;
   }
   100% {
-    /* transform: none; */
     opacity: 1;
   }
 }
@@ -180,6 +194,36 @@ video {
   100% {
     transform: translate(0, 0);
   }
+}
+.carousel-table_img {
+  animation: carousel-table_img 12s ease-out infinite normal;
+}
+.slide {
+  animation: slide 1.5s ease-out infinite normal;
+}
+.lights {
+  animation: lights 5s ease-out 1s infinite normal;
+  animation-fill-mode: both;
+}
+.carousel-1 {
+  animation: carousel-1 10s ease-out 1s infinite normal;
+  animation-fill-mode: both;
+}
+.carousel-2 {
+  animation: carousel-2 10s ease-out 1s infinite normal;
+  animation-fill-mode: both;
+}
+.carousel-3 {
+  animation: carousel-3 10s ease-out 1s infinite normal;
+  animation-fill-mode: both;
+}
+.carousel-4 {
+  animation: carousel-4 10s ease-out 1s infinite normal;
+  animation-fill-mode: both;
+}
+.flickering {
+  animation: flickering 3s 1s infinite normal;
+  animation-fill-mode: both;
 }
 q {
   display: block;
@@ -266,33 +310,6 @@ p {
     animation: flip-right 3s ease-out 1s 1 normal running;
     animation-fill-mode: forwards;
   }
-}
-.slide {
-  animation: slide 1.5s ease-out infinite normal;
-}
-.lights {
-  animation: lights 5s ease-out 1s infinite normal;
-  animation-fill-mode: both;
-}
-.carousel-1 {
-  animation: carousel-1 10s ease-out 1s infinite normal;
-  animation-fill-mode: both;
-}
-.carousel-2 {
-  animation: carousel-2 10s ease-out 1s infinite normal;
-  animation-fill-mode: both;
-}
-.carousel-3 {
-  animation: carousel-3 10s ease-out 1s infinite normal;
-  animation-fill-mode: both;
-}
-.carousel-4 {
-  animation: carousel-4 10s ease-out 1s infinite normal;
-  animation-fill-mode: both;
-}
-.flickering {
-  animation: flickering 3s 1s infinite normal;
-  animation-fill-mode: both;
 }
 .grid {
   display: grid;
@@ -1021,7 +1038,7 @@ h5 {
   }
 }
 @media screen and (max-width: 720px) {
-  .product_card{
+  .product_card {
     transform: translate(45%, 0);
   }
 }
@@ -1032,7 +1049,7 @@ h5 {
   .store-banner p {
     font-size: 2.5rem;
   }
-} 
+}
 @media screen and (max-width: 380px) {
   .product_card {
     transform: translate(50%, 0);
@@ -1044,7 +1061,11 @@ h5 {
 }
 /* Tabel */
 .size-chart {
-  margin: 4rem auto;
+  margin: 2rem auto;
+}
+table {
+  width: 100%;
+  margin: 2.5rem;
 }
 table,
 td,
@@ -1056,48 +1077,22 @@ thead {
   border-collapse: collapse;
   padding: 0.4rem;
 }
+.table_img-wrapper {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  overflow: auto;
+  justify-content: flex-start;
+}
 .table_img {
+  width: 30rem;
   position: relative;
-  max-width: 40rem;
-  margin-left: 1rem;
-  background: linear-gradient(
-    357deg,
-    rgba(243, 99, 201, 1) 30%,
-    rgba(28, 190, 194, 1) 100%
-  );
+  place-self: center;
+  margin-right: 3rem;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 4px -4px 2px 1px var(--color-primary);
 }
-.table_img img {
-  filter: drop-shadow(5px 0px 6px black);
-}
-.table_img p {
-  color: var(--color-block);
-  font-size: 3.2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.selector {
-  display: block;
-  width: 2.5rem;
-  height: 2.5rem;
-  position: absolute;
-  border-radius: 100%;
-  background-color: var(--color-text);
-  box-shadow: 0 0 15px 2px var(--color-text);
-  top: 10%;
-  left: 10%;
-  transform: translate(-10%, -10%);
-}
-@media screen and (max-width: 650px) {
-  .size-chart {
-    flex-direction: column;
-  }
-  .table_img {
-    max-width: 100%;
-    margin-top: 1rem;
-  }
-}
+
 @media screen and (max-width: 440px) {
   table,
   td,
@@ -1105,14 +1100,6 @@ thead {
   thead {
     font-size: 1.3rem;
     padding: 0.2rem;
-  }
-}
-@media screen and (max-width: 340px) {
-  table,
-  td,
-  th,
-  thead {
-    font-size: 1.2rem;
   }
 }
 /* Community Page */
