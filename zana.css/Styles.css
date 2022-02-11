@@ -74,13 +74,8 @@ video {
 }
 @keyframes carousel-table_img {
   0% {
-    transform: translateX(100%);
-  }
-  60%,
-  70% {
     transform: translateX(0);
   }
-  90%,
   100% {
     transform: translateX(-100%);
   }
@@ -196,7 +191,7 @@ video {
   }
 }
 .carousel-table_img {
-  animation: carousel-table_img 12s ease-out infinite normal;
+  animation: carousel-table_img 20s linear infinite;
 }
 .slide {
   animation: slide 1.5s ease-out infinite normal;
@@ -1077,17 +1072,18 @@ thead {
   border-collapse: collapse;
   padding: 0.4rem;
 }
-.table_img-wrapper {
+.table-carousel_wrapper {
   width: 100%;
+  height: 30rem;
   margin: 1rem auto;
-  padding: 1rem;
-  overflow: auto;
-  justify-content: flex-start;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.table_img-carousel {
+  width: 125rem;
 }
 .table_img {
   width: 30rem;
-  position: relative;
-  place-self: center;
   margin-right: 3rem;
   transform: translate3d(0, 0, 0);
   box-shadow: 4px -4px 2px 1px var(--color-primary);
