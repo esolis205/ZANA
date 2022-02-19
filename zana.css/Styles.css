@@ -1435,7 +1435,7 @@ textarea {
 }
 .blog-posts_container{
   max-width: 90rem;
-  height: 45rem;
+  height: 48rem;
   padding: .5rem;
   margin: 3rem auto;
   text-align: center;
@@ -1446,10 +1446,12 @@ textarea {
 }
 .blog-posts_wrapper{
   margin: 3rem;
+  justify-content: space-evenly;
 }
 .blog-posts_container h2{
   margin: 0;
   font-size: 4rem;
+  color: var(--color-block);
   border-radius: initial;
   border-bottom: 1px solid silver;
 }
@@ -1461,4 +1463,13 @@ textarea {
 }
 .blog-posts_link:hover{
   opacity: .6;
+}
+/* Crunch */
+#crunch {
+  color: var(--color-block);
+}
+@media screen and (max-width: 700px) {
+  .img-crunch {
+    display: none;
+  }
 }
