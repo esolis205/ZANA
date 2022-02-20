@@ -404,7 +404,6 @@ p {
   .header__letter {
     font-size: 6rem;
     padding: 0.5rem;
-    box-shadow: 3px 0px 0px -1px silver;
   }
   .header__collection {
     font-size: 1.5rem;
@@ -1427,8 +1426,12 @@ textarea {
   font-size: 1.7rem;
 }
 .blog a {
-  margin: 1rem;
   color: var(--color-block);
+  text-decoration: underline;
+}
+.tableOfContentsLink {
+  margin: .6rem;
+  padding: .2rem;
 }
 .open-circle {
   list-style: circle;
