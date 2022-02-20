@@ -368,6 +368,7 @@ p {
 .header__letter {
   color: var(--color-primary);
   border-right: 2px solid silver;
+  border-radius: initial;
   margin-right: 1.8rem;
   font-size: 9rem;
   padding-right: 10px;
