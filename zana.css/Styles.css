@@ -4,7 +4,7 @@ html {
 :root {
   --color-primary: #fc07cf;
   --color-secondary: #e622f0;
-  --color-header: #0f0e0f;
+  --color-header: #000000;
   --color-text: #ffffff;
   --color-block: #63e9f3;
   --font-header: "El Messiri", sans-serif;
@@ -35,6 +35,11 @@ video {
   max-width: 100%;
   width: 100%;
   object-fit: cover;
+}
+.svg {
+  max-width: none;
+  width: 10rem;
+  height: auto;
 }
 .card__product::-webkit-scrollbar,
 .shop--container::-webkit-scrollbar,
@@ -71,6 +76,16 @@ video {
 .about_zana {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+@keyframes img-cycle {
+  25%,
+  50% {
+    opacity: 1;
+  }
+  75%,
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes carousel-table_img {
   0% {
@@ -985,6 +1000,67 @@ h5 {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+/* Features */
+.features_container {
+  height: auto;
+  max-width: 90rem;
+  margin: 1rem auto;
+  border-radius: initial;
+  border-top: 1px solid silver;
+}
+.features_container-header h2 {
+  font-size: 3rem;
+}
+.features_container-header {
+  padding: .5rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+.features_container h2,
+.features_container h3 {
+  margin: 1rem;
+  color: silver;
+}
+.features-wrapper {
+  margin: 1rem;
+  text-align: center;
+  justify-content: center;
+  grid: repeat(2, 30rem) / repeat(2, 35rem);
+}
+.features {
+  align-items: center;
+  flex-direction: column;
+  box-shadow: inset 0 0 10px 1px silver;
+}
+@media screen and (max-width: 730px) {
+  .features-wrapper {
+    grid: unset;
+    grid-template-rows: repeat(4, 30rem);
+  }
+}
+/* ........ */
+/* ad-1 */
+.ad-1 {
+  margin: 2rem auto;
+  border-radius: initial;
+  justify-content: center;
+}
+.ad-1_message {
+  place-self: center;
+  margin: auto 2rem;
+}
+.ad-1_img-wrapper {
+  max-width: 40rem;
+}
+.ad-1_img-wrapper img {
+  border-radius: initial;
+}
+@media screen and (max-width: 500px) {
+  .ad-1 {
+    flex-direction: column;
+  }
+}
+/* ........ */
 .store-product {
   flex-direction: row;
   padding-left: 1.2rem;
@@ -1002,8 +1078,17 @@ h5 {
   width: 28rem;
   height: 40rem;
   overflow: hidden;
+  position: relative;
   margin-bottom: 1rem;
   box-shadow: 0 0 4px 2px silver;
+}
+.product_card-img_cycle {
+  bottom: 0%;
+  position: absolute;
+  touch-action: manipulation;
+}
+.product_card-img_cycle:hover {
+  animation: img-cycle 6s ease infinite both;
 }
 .product_card-bottom p {
   font-size: 1.4rem;
@@ -1443,7 +1528,6 @@ textarea {
   padding: .5rem;
   margin: 3rem auto;
   text-align: center;
-  box-shadow: none;
   background: inherit;
   letter-spacing: 1px;
   box-shadow: inset 0px 0px 10px 1px silver;
@@ -1476,4 +1560,8 @@ textarea {
   .img-crunch {
     display: none;
   }
+}
+/* image hover */
+.product_card-img_hover:hover {
+  opacity: 0;
 }

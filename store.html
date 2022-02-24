@@ -13,6 +13,11 @@
     <meta property="og:image" content="http://www.zanabrand.com" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="www.zanabrand.com/store" />
+    <meta
+      name="keywords"
+      content="cross over leggings, black leggings, pink leggings, tough leggings, sweat wicking, butt lifitng,
+    running butt lifitng, sports bra, motion control, motion control sports bra, happily ever after, what leggings are the best, zana leggings, zana brand llc"
+    />
     <link rel="stylesheet" href="/zana.css/normalize.css" />
     <link rel="stylesheet" href="/zana.css/Styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,15 +31,19 @@
     </style>
     <title>Zana Brand Store</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-219562241-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-219562241-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-219562241-1');
-</script>
+      gtag("config", "UA-219562241-1");
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -84,12 +93,30 @@
       />
       <p>Don't just see the change. Feel the change.</p>
     </section>
+    <!-- ad-1 -->
+    <section class="ad-1 flex__box">
+      <div class="ad-1_message">
+        <h2>Have you ever asked...</h2>
+        <p>What leggings are the best?</p>
+        <p>After years of thinking, we give you <em>Zana Leggings</em></p>
+      </div>
+      <div class="ad-1_img-wrapper">
+        <img
+          src="/images/Zana-ad-1(sample).webp"
+          alt=" Zana ad banner, text displays your body makeover."
+        />
+      </div>
+    </section>
+    <!-- Store -->
     <h2 class="store-header" id="store">Store</h2>
     <section class="store">
       <section class="store-product flex__box">
         <div class="product_card flex__box">
           <div class="product_card-top">
-            <img src="/images/Black-leggings-cardx500.jpg" alt="Model showcasing zana leggings black set." />
+            <img
+              src="/images/Black-leggings-cardx500.jpg"
+              alt="Model showcasing zana leggings black set."
+            />
           </div>
           <div class="product_card-bottom flip flip-right">
             <p>Limited Edition</p>
@@ -122,9 +149,9 @@
               >
             </div>
             <!-- <form class="product_card-form" action="/create-checkout-session" method="POST">
-                    <select name="size">
-                      <option value="">Size...</option>
-                      <option value="s">SM</option>
+              <select name="size">
+                <option value="">Size...</option>
+                <option value="s">SM</option>
                       <option value="m">MD</option>
                       <option value="l">LG</option>
                       <option value="x">XLG</option>
@@ -141,9 +168,15 @@
         </div>
         <div class="product_card flex__box">
           <div class="product_card-top">
-            <img 
-            src="/images/Pink-leggings-cardx600.jpg"
-            alt="Model showcasing Zana Leggings Pink set" />
+            <img
+              src="/images/Butt-Pink_set.jpg"
+              alt="Model showcasing Zana Leggings Pink set"
+            />
+            <img
+              class="product_card-img_cycle"
+              src="/images/Pink-leggings-cardx600.jpg"
+              alt="Model showcasing Zana Leggings Pink set"
+            />
           </div>
           <div class="product_card-bottom flip flip-right">
             <p>Limited Edition</p>
@@ -187,13 +220,52 @@
                       <label class="product_card-label" for="color">Pink</label checked>
                       <input type="checkbox" name="price" id="" disabled>
                       <label class="product_card-label" for="price">$45</label checked>
-                    <div>
+                        <div>
                       <button class="product_card-btn" type="submit">Purchase</button>
                     </div>
                   </form> -->
           </div>
         </div>
       </section>
+    </section>
+    <!-- Features -->
+    <section class="features_container">
+      <div class="features_container-header">
+        <h2>
+          Slip into your <em>Happily ever after</em>, with these included
+          features.
+        </h2>
+      </div>
+      <div class="grid features-wrapper">
+        <div class="features flex__box">
+          <div>
+            <img class="svg" src="/images/running.svg" alt="Running Iocn" />
+          </div>
+          <h3>Running Butt-Lifitng Technology</h3>
+        </div>
+        <div class="features flex__box">
+          <div>
+            <img class="svg" src="/images/droplet.svg" alt="Droplet Icon" />
+          </div>
+          <h3>Sweat-Wicking</h3>
+        </div>
+        <div class="features flex__box">
+          <div>
+            <img class="svg" src="/images/hammer.svg" alt="Hammer Icon" />
+          </div>
+          <h3>Built To last</h3>
+        </div>
+        <div class="features flex__box">
+          <div>
+            <img
+              class="svg"
+              src="/images/maximize.svg"
+              alt="Maximize arrows Icon"
+            />
+          </div>
+          <h3>Four-Way Stretch</h3>
+        </div>
+      </div>
     </section>
     <div class="size-chart flex__box">
       <table>
@@ -342,76 +414,6 @@
         </colgroup>
       </table>
     </div>
-    <div class="table-carousel_wrapper flex__box">
-      <div class="table_img-carousel flex__box carousel-table_img">
-          <div class="table_img">
-            <a href="#store">
-              <img
-                src="/images/Zana-ad-2x800.webp"
-                alt="Model wearing Zana leggings and sports bra."
-              />
-            </a>
-          </div>
-          <div class="table_img">
-            <a href="#store">
-              <img
-                src="/images/Zana-ad-1(sample).webp"
-                alt="Model wearing Zana leggings and sports bra."
-              />
-            </a>
-          </div>
-          <div class="table_img">
-            <a href="#store">
-              <img
-                src="/images/Zana-ad-2x800.webp"
-                alt="Model wearing Zana leggings and sports bra."
-              />
-            </a>
-          </div>
-          <div class="table_img">
-            <a href="#store">
-              <img
-                src="/images/Zana-ad-1(sample).webp"
-                alt="Model wearing Zana leggings and sports bra."
-              />
-            </a>
-          </div>
-      </div>
-      <div class="table_img-carousel flex__box carousel-table_img">
-        <div class="table_img">
-          <a href="#store">
-            <img
-              src="/images/Zana-ad-2x800.webp"
-              alt="Model wearing Zana leggings and sports bra."
-            />
-          </a>
-        </div>
-        <div class="table_img">
-          <a href="#store">
-            <img
-              src="/images/Zana-ad-1(sample).webp"
-              alt="Model wearing Zana leggings and sports bra."
-            />
-          </a>
-        </div>
-        <div class="table_img">
-          <a href="#store">
-            <img
-              src="/images/Zana-ad-2x800.webp"
-              alt="Model wearing Zana leggings and sports bra."
-            />
-          </a>
-        </div>
-        <div class="table_img">
-          <a href="#store">
-            <img
-              src="/images/Zana-ad-1(sample).webp"
-              alt="Model wearing Zana leggings and sports bra."
-            />
-          </a>
-        </div>
-    </div>
-    </div>
     <!-- Footer -->
     <section class="footer flex__box">
       <div class="copy">
@@ -424,7 +426,9 @@
       <div class="footer__list">
         <div class="footer__items">
           <a href="/policy.html"><p class="footer__item">Privacy Policy</p></a>
-          <a href="/return.html"><p class="footer__item">Shipping & Returns</p></a>
+          <a href="/return.html"
+            ><p class="footer__item">Shipping & Returns</p></a
+          >
           <a href="/about-us.html"><p class="footer__item">About Us</p></a>
           <a href="/about-us.html"><p class="footer__item">Contact Us</p></a>
         </div>
